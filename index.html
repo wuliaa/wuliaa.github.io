@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -24,6 +24,7 @@
 <meta property="og:title" content="blog">
 <meta property="og:url" content="https://wuliaa.github.io/index.html">
 <meta property="og:site_name" content="blog">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="Inny">
 <meta name="twitter:card" content="summary">
 
@@ -36,7 +37,7 @@
     sidebar: "",
     isHome : true,
     isPost : false,
-    lang   : 'zh-Hans'
+    lang   : 'zh-CN'
   };
 </script>
 
@@ -90,7 +91,7 @@
       <header class="header" itemscope itemtype="http://schema.org/WPHeader">
         <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Navigationsleiste an/ausschalten">
+    <div class="toggle" aria-label="切换导航栏">
     </div>
   </div>
 
@@ -129,10 +130,10 @@
     <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
-          Inhaltsverzeichnis
+          文章目录
         </li>
         <li class="sidebar-nav-overview">
-          Übersicht
+          站点概览
         </li>
       </ul>
 
@@ -150,8 +151,8 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">3</span>
-          <span class="site-state-item-name">Artikel</span>
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
         </a>
       </div>
   </nav>
@@ -186,71 +187,7 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
-    <link itemprop="mainEntityOfPage" href="https://wuliaa.github.io/2020/07/23/gradle-download/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Inny">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/07/23/gradle-download/" class="post-title-link" itemprop="url">Android studio gradle 下载很慢</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-
-              <time title="Erstellt: 2020-07-23 14:15:26 / Geändert am: 15:08:53" itemprop="dateCreated datePublished" datetime="2020-07-23T14:15:26+08:00">2020-07-23</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>每新建一个项目时，国内因为GFW的原因，导致同步谷歌等服务器的插件源非常慢，Android studio下载gradle需要很多时间，自己上网下载对应版本的gradle会节省很多时间。</p>
-<p>1.在gradle-wrapper.properties中查看gradle下载地址和版本</p>
-<p>2.去查看所有分发的gradle版本<a href="https://services.gradle.org/distributions/" target="_blank" rel="noopener">地址</a></p>
-<p>3.下载完成后放在目录：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1.windows在 C:\Users\yourname\.gradle\wrapper\dists\gradle-版本\随机字符串\</span><br><span class="line">2.mac在 &#x2F;Users&#x2F;用户名&#x2F;.gradle&#x2F;wrapper&#x2F;dists&#x2F;gradle-版本&#x2F;随机字符串&#x2F;</span><br></pre></td></tr></table></figure>
-<p>4.将gradle-版本.zip.part移除，把自己下载的gradle-gradle-版本.zip复制到这个目录<br>然后再次启动Andriod Studio，会自动读取gradle并解压</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://wuliaa.github.io/2020/07/23/download-gradle/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -273,10 +210,10 @@
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="Erstellt: 2020-07-23 14:15:26 / Geändert am: 15:30:21" itemprop="dateCreated datePublished" datetime="2020-07-23T14:15:26+08:00">2020-07-23</time>
+              <time title="创建时间：2020-07-23 14:15:26 / 修改时间：15:30:21" itemprop="dateCreated datePublished" datetime="2020-07-23T14:15:26+08:00">2020-07-23</time>
             </span>
 
           
@@ -314,7 +251,7 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://wuliaa.github.io/2020/07/14/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -337,10 +274,10 @@
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
               </span>
-              <span class="post-meta-item-text">Veröffentlicht am</span>
+              <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="Erstellt: 2020-07-14 17:50:55 / Geändert am: 18:08:34" itemprop="dateCreated datePublished" datetime="2020-07-14T17:50:55+08:00">2020-07-14</time>
+              <time title="创建时间：2020-07-14 17:50:55 / 修改时间：18:08:34" itemprop="dateCreated datePublished" datetime="2020-07-14T17:50:55+08:00">2020-07-14</time>
             </span>
 
           
@@ -430,7 +367,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Inny</span>
 </div>
-  <div class="powered-by">Erstellt mit  <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
 
         
